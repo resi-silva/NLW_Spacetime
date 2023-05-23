@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <aside>
+      <img src="./assets/logo.svg" alt="Logo NLW" />
+      <img src="./assets/4.png" alt="Foto Ieda" />
+      <p>Cápsula do tempo de</p>
+      <strong>Ieda Renata da Silva </strong>
+      <span>Feito com 💜 no NLW da Rocketseat</span>
+    </aside>
+
+    <nav>
+      <div>
+        <p id="current_date"></p>
+      </div>
+      <a
+        href="https://www.youtube.com/watch?v=iqFJi5QvTIk"
+        target="_blank"
+        class="memory"
+      >
+        <small> </small>
+        <br />
+        <br />
+        <h1>Meus Tudo!!!</h1>
+        <div>
+          <img src="./assets/eles.jpg" alt="filhos de Ieda" />
+        </div>
+
+        <p>
+          Ser sua mãe é uma verdadeira bênção que transcende qualquer descrição.
+          Desde o momento em que esses dois seres incríveis vieram ao mundo,
+          nossas vidas foram transformadas de maneira indescritível. Eles são os
+          raios de sol que iluminam cada canto do nosso lar, enchendo-o com
+          risos contagiantes, abraços calorosos e uma energia que é simplesmente
+          radiante. <br />
+          <br />
+          Ariane, com sua doçura cativante, ilumina nossos dias com seu sorriso
+          encantador. Sua inteligência aguçada e sede de conhecimento me inspira
+          a nunca parar de aprender e crescer. Ver sua determinação em enfrentar
+          desafios me enche de orgulho e confiança de que ela pode conquistar
+          tudo o que desejar na vida.
+          <br />
+          <br />
+          Gerson, com sua energia contagiante, é como um furacão de alegria que
+          nunca para de surpreender. Sua paixão pela vida é evidente em tudo o
+          que faz. Seu espírito corajoso e habilidades incríveis me mostra que
+          não há limites para o que se pode alcançar quando se tem determinação
+          e perseverança.
+          <picture>
+            <source media="(min-width: )" srcset="" />
+            <img src="" alt="" />
+          </picture>
+        </p>
+      </a>
+
+      <a
+        href="https://www.youtube.com/watch?v=iqFJi5QvTIk"
+        target="_blank"
+        class="memory"
+      >
+        <div>
+          <img src="./assets/two.jpg" alt="filhos" />
+        </div>
+
+        <p>
+          Eles me ensinam lições valiosas sobre amor incondicional, paciência e
+          resiliência. Eles me lembram constantemente da importância de
+          valorizar os momentos preciosos da vida e de celebrar as pequenas
+          vitórias. Esses dois anjos são o maior presente que eu poderia
+          desejar, e ser sua mãe é uma honra que me enche de felicidade e
+          gratidão. <br /><br />
+          Filhos, vocês são dádivas que me enriquecem além das palavras. São a
+          personificação do amor puro e da luz radiante que ilumina meus dias.
+          Que eu possa ser para vocês tudo o que vocês são para mim: guias
+          amorosos, apoio incondicional e o abrigo seguro em meio às tempestades
+          da vida.
+        </p>
+      </a>
+      <a
+        href="https://www.youtube.com/watch?v=iqFJi5QvTIk"
+        target="_blank"
+        class="memory"
+      >
+        <div>
+          <img src="./assets/mae.jpg" alt="Ieda e mãe juntas sorrindo" />
+        </div>
+
+        <p>
+          Mãe!!! a mulher incrível que me trouxe ao mundo e que tem sido minha
+          inspiração constante ao longo da vida. Não há palavras suficientes
+          para expressar o amor e a gratidão que sinto por tudo o que você fez e
+          continua fazendo por mim. <br /><br />
+          Seu amor incondicional é o alicerce que sustenta cada passo que dou,
+          cada conquista que alcanço e cada desafio que enfrento. Sua presença
+          calorosa e acolhedora é meu refúgio seguro, onde posso encontrar
+          conforto e apoio nos momentos mais difíceis.
+          <br /><br />
+          Você é a personificação da força e da coragem. Com sua determinação
+          inabalável, você superou obstáculos, enfrentou adversidades e mostrou
+          que nada é impossível quando se tem fé e perseverança. Sua resiliência
+          é uma lição diária para mim, lembrando-me de nunca desistir dos meus
+          sonhos e de sempre buscar o melhor em cada situação.
+          <br /><br />
+        </p>
+      </a>
+    </nav>
+
+    <script>
+      function exibirData() {
+        var dataAtual = new Date()
+        var dia = dataAtual.getDate()
+        var mes = dataAtual.getMonth() + 1 // Os meses começam em 0
+        var ano = dataAtual.getFullYear()
+        // Formata a data como DD/MM/AAAA
+        var dataFormatada = dia + "/" + mes + "/" + ano
+        // Atualiza o conteúdo do elemento com id "data"
+        document.getElementById("current_date").innerText = dataFormatada
+      }
+      exibirData()
+    </script>
+  </body>
+</html>
